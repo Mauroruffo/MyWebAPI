@@ -10,6 +10,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // Singleton for Employee Data Handler
 builder.Services.AddSingleton<EmployeeData>();
+// Singleton for Student Data Handler
+builder.Services.AddSingleton<StudentData>();
 // Allow Angular and WebAPI builds to use same localhost route 
 builder.Services.AddCors(options => {
     options.AddPolicy("NewPolicy", app =>
